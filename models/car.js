@@ -5,7 +5,7 @@ const carSchema = new mongoose.Schema({
   model: { type: String, required: true },
   year: { type: Number, required: true },
   price: { type: Number, required: true },
-  description: String,
+  inStock: {type: Boolean, required: true}
 });
 
 const Car = mongoose.model('Car', carSchema);
